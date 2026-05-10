@@ -100,7 +100,7 @@ Dataset contains:
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone <your-github-repo-link>
+git clone https://github.com/JISHANMULLANI/Smart-house-price-prediction
 ````
 
 ---
