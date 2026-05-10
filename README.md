@@ -242,7 +242,6 @@ Features:
 
 * Add chatbot assistant
 * Add authentication
-* Deploy on cloud
 * Add price trend charts
 * Add property recommendations
 * Add map integration
