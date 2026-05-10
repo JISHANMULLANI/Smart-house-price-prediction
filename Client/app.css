@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070') no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.container{
+    position:relative;
+    z-index:1;
+}
+
+.card{
+    width:450px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:35px;
+    color:white;
+    box-shadow:0px 8px 32px rgba(0,0,0,0.3);
+}
+
+.top-section{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.top-section h1{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.top-section p{
+    color:#ddd;
+    font-size:15px;
+}
+
+.input-box{
+    margin-bottom:25px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:10px;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.input-box input[type="number"]{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+.option-grid{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.option-grid input{
+    display:none;
+}
+
+.option-grid label{
+    padding:12px 18px;
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.option-grid input:checked + label{
+    background:#00b894;
+    color:white;
+}
+
+select{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+}
+
+.predict-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#00b894;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.predict-btn:hover{
+    background:#019875;
+}
+
+.result-box{
+    margin-top:25px;
+    padding:20px;
+    text-align:center;
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+}
+
+.result-box h2{
+    color:#fff;
+}
