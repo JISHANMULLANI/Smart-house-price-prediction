@@ -1,9 +1,7 @@
-````md
 # 🏠 Smart House Price Prediction with AI Chatbot
 
 An AI-powered real estate web application that predicts Bangalore house prices using Machine Learning and provides customer assistance through a Groq AI chatbot.
 
----
 
 # 🚀 Features
 
@@ -17,7 +15,6 @@ An AI-powered real estate web application that predicts Bangalore house prices u
 ✅ Interactive customer support assistant  
 ✅ Real estate investment suggestions  
 
----
 
 # 🤖 AI Chatbot Features
 
@@ -30,7 +27,6 @@ The chatbot can:
 - Help users with pricing information
 - Provide Bangalore property guidance
 
----
 
 # 📂 Project Structure
 
@@ -72,7 +68,6 @@ HOUSE PRICE PREDICTION/
 * Decision Tree Regressor
 * GridSearchCV for best model selection
 
----
 
 # 📊 Regression Metrics
 
@@ -83,7 +78,7 @@ The model evaluation includes:
 * MSE (Mean Squared Error)
 * RMSE (Root Mean Squared Error)
 
----
+
 
 # ⚙️ Technologies Used
 
@@ -111,7 +106,7 @@ The model evaluation includes:
 * Groq API
 * Llama 3 Model
 
----
+
 
 # 📦 Installation
 
@@ -121,7 +116,7 @@ The model evaluation includes:
 git clone https://github.com/JISHANMULLANI/Smart-house-price-prediction.git
 ```
 
----
+
 
 ## 2️⃣ Open Project Folder
 
@@ -129,7 +124,7 @@ git clone https://github.com/JISHANMULLANI/Smart-house-price-prediction.git
 cd "HOUSE PRICE PREDICTION"
 ```
 
----
+
 
 ## 3️⃣ Install Required Libraries
 
@@ -137,7 +132,7 @@ cd "HOUSE PRICE PREDICTION"
 pip install -r requirements.txt
 ```
 
----
+
 
 # 🔑 Setup Groq API Key
 
@@ -171,7 +166,6 @@ Server will run at:
 http://127.0.0.1:5000
 ```
 
----
 
 ## Step 2 — Open Frontend
 
@@ -183,7 +177,7 @@ Client/app.html
 
 OR use VS Code Live Server.
 
----
+
 
 # 💬 Chatbot Usage
 
@@ -196,7 +190,7 @@ You can ask:
 * Is Electronic City a good investment?
 * Which location is expensive?
 
----
+
 
 # 📈 Example Prediction
 
@@ -213,7 +207,7 @@ Output:
 ₹ 86.81 Lakhs
 ```
 
----
+
 
 # 📌 API Endpoints
 
@@ -223,7 +217,7 @@ Output:
 GET /get_location_names
 ```
 
----
+
 
 ## Predict House Price
 
@@ -238,7 +232,7 @@ Parameters:
 * bath
 * location
 
----
+
 
 ## AI Chatbot
 
@@ -246,7 +240,7 @@ Parameters:
 POST /chat
 ```
 
----
+
 
 # 🖥️ Frontend Features
 
@@ -257,7 +251,6 @@ POST /chat
 ✅ Interactive chatbot popup
 ✅ AI customer support
 
----
 
 # 🔥 Future Improvements
 
@@ -266,19 +259,16 @@ POST /chat
 * Price trend visualization
 * Database integration
 
----
 
 # 👨‍💻 Author
 
 Jishan Mullani
 
----
 
 # 📜 License
 
 This project is for educational and learning purposes.
 
----
 
 # ⭐ Support
 
