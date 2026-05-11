@@ -4,9 +4,11 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bangalore Home Price Prediction</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Smart House Price Prediction</title>
 
     <link rel="stylesheet" href="app.css">
 
@@ -18,110 +20,186 @@
 
 <body>
 
-    <div class="overlay"></div>
+<div class="overlay"></div>
 
-    <div class="container">
+<div class="container">
 
-        <div class="card">
+    <div class="card">
 
-            <div class="top-section">
+        <h1>🏠 Smart House Price Prediction</h1>
 
-                <h1>🏠 Bangalore House Price Prediction</h1>
+        <p class="subtitle">
+            AI Powered Real Estate Platform
+        </p>
 
-                <p>
-                    AI Powered Real Estate Price Prediction System
-                </p>
+        <div class="input-box">
 
-            </div>
+            <label>Area (Square Feet)</label>
 
-            <div class="input-box">
+            <input type="number"
+            id="uiSqft"
+            placeholder="Enter Area">
 
-                <label>Area (Square Feet)</label>
+        </div>
 
-                <input type="number" id="uiSqft" placeholder="Enter Area in Sqft">
+        <div class="input-box">
 
-            </div>
+            <label>BHK</label>
 
-            <div class="input-box">
+            <div class="option-grid">
 
-                <label>BHK</label>
+                <input type="radio"
+                id="bhk1"
+                name="uiBHK"
+                value="1">
 
-                <div class="option-grid">
+                <label for="bhk1">1</label>
 
-                    <input type="radio" id="bhk1" name="uiBHK" value="1">
-                    <label for="bhk1">1</label>
+                <input type="radio"
+                id="bhk2"
+                name="uiBHK"
+                value="2"
+                checked>
 
-                    <input type="radio" id="bhk2" name="uiBHK" value="2" checked>
-                    <label for="bhk2">2</label>
+                <label for="bhk2">2</label>
 
-                    <input type="radio" id="bhk3" name="uiBHK" value="3">
-                    <label for="bhk3">3</label>
+                <input type="radio"
+                id="bhk3"
+                name="uiBHK"
+                value="3">
 
-                    <input type="radio" id="bhk4" name="uiBHK" value="4">
-                    <label for="bhk4">4</label>
+                <label for="bhk3">3</label>
 
-                    <input type="radio" id="bhk5" name="uiBHK" value="5">
-                    <label for="bhk5">5</label>
+                <input type="radio"
+                id="bhk4"
+                name="uiBHK"
+                value="4">
 
-                </div>
-
-            </div>
-
-            <div class="input-box">
-
-                <label>Bathrooms</label>
-
-                <div class="option-grid">
-
-                    <input type="radio" id="bath1" name="uiBathrooms" value="1">
-                    <label for="bath1">1</label>
-
-                    <input type="radio" id="bath2" name="uiBathrooms" value="2" checked>
-                    <label for="bath2">2</label>
-
-                    <input type="radio" id="bath3" name="uiBathrooms" value="3">
-                    <label for="bath3">3</label>
-
-                    <input type="radio" id="bath4" name="uiBathrooms" value="4">
-                    <label for="bath4">4</label>
-
-                    <input type="radio" id="bath5" name="uiBathrooms" value="5">
-                    <label for="bath5">5</label>
-
-                </div>
-
-            </div>
-
-            <div class="input-box">
-
-                <label>Location</label>
-
-                <select id="uiLocations">
-
-                    <option value="" disabled selected>
-                        Select Location
-                    </option>
-
-                </select>
-
-            </div>
-
-            <button class="predict-btn" onclick="onClickedEstimatePrice()">
-
-                Predict Price
-
-            </button>
-
-            <div class="result-box" id="uiEstimatedPrice">
-
-                <h2>Estimated Price Will Appear Here</h2>
+                <label for="bhk4">4</label>
 
             </div>
 
         </div>
 
+        <div class="input-box">
+
+            <label>Bathrooms</label>
+
+            <div class="option-grid">
+
+                <input type="radio"
+                id="bath1"
+                name="uiBathrooms"
+                value="1">
+
+                <label for="bath1">1</label>
+
+                <input type="radio"
+                id="bath2"
+                name="uiBathrooms"
+                value="2"
+                checked>
+
+                <label for="bath2">2</label>
+
+                <input type="radio"
+                id="bath3"
+                name="uiBathrooms"
+                value="3">
+
+                <label for="bath3">3</label>
+
+            </div>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Location</label>
+
+            <select id="uiLocations">
+
+                <option disabled selected>
+                    Select Location
+                </option>
+
+            </select>
+
+        </div>
+
+        <button class="predict-btn"
+        onclick="onClickedEstimatePrice()">
+
+            Predict Price
+
+        </button>
+
+        <div id="uiEstimatedPrice"
+        class="result-box">
+
+            <h2>Estimated Price</h2>
+
+        </div>
+
     </div>
 
-</body>
+</div>
 
+
+<!-- BOT ICON -->
+
+<div class="bot-icon"
+onclick="toggleChat()">
+
+    <img src="images/chat-bot.webp">
+
+</div>
+
+
+<!-- CHATBOT -->
+
+<div class="chatbot"
+id="chatbot">
+
+    <div class="chat-header">
+
+        🤖 AI Assistant
+
+        <span onclick="toggleChat()">
+
+            ✖
+
+        </span>
+
+    </div>
+
+    <div class="chat-body"
+    id="chatBody">
+
+        <div class="bot-message">
+
+            Hello 👋 <br>
+            Ask me about Bangalore properties.
+
+        </div>
+
+    </div>
+
+    <div class="chat-input">
+
+        <input type="text"
+        id="userMessage"
+        placeholder="Ask something...">
+
+        <button onclick="sendMessage()">
+
+            Send
+
+        </button>
+
+    </div>
+
+</div>
+
+</body>
 </html>

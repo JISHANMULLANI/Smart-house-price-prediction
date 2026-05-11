@@ -5,3 +5,5 @@ pandas
 scikit-learn
 matplotlib
 jupyter
+groq
+python-dotenv
